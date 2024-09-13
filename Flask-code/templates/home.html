@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="jumbotron text-center bg-primary text-light">
+    <h1 class="display-4">Welcome to ITA</h1>
+    <p class="lead">Your Intelligent Text Assistant</p>
+    <hr class="my-4">
+    <p class="font-italic">Empowering your text with intelligent solutions.</p>
+    <a class="btn btn-outline-light btn-lg mt-3" href="{{ url_for('signup') }}" role="button">Get Started - Sign Up</a>
+    <a class="btn btn-outline-light btn-lg mt-3 ml-2" href="{{ url_for('login') }}" role="button">Already Registered? Login</a>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Why Choose ITA?</h2>
+            <p>ITA is designed to enhance your text processing needs with intelligent algorithms and user-friendly interfaces. Whether you're starting fresh or continuing your journey, ITA has the tools to help you succeed.</p>
+            <ul class="list-group">
+                <li class="list-group-item"><i class="fas fa-check-circle text-primary"></i> Advanced text processing</li>
+                <li class="list-group-item"><i class="fas fa-check-circle text-primary"></i> User-friendly interface</li>
+                <li class="list-group-item"><i class="fas fa-check-circle text-primary"></i> Reliable performance</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <h2>Get Started</h2>
+            <p>If you’re new here, you can start by signing up to explore all the features ITA has to offer.</p>
+            <a href="{{ url_for('signup') }}" class="btn btn-primary btn-lg mt-3">Sign Up Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <h2>About ITA</h2>
+    <p>Intelligent Text Assistant (ITA) is your go-to solution for all things related to text processing. Our platform leverages cutting-edge technology to provide users with powerful tools that make text processing easier, faster, and more accurate. Whether you're looking to analyze large datasets, generate content, or improve your writing, ITA is designed to meet your needs with simplicity and efficiency.</p>
+</div>
+
+<div class="container mt-5">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or need support, feel free to reach out to us:</p>
+    <ul class="list-group">
+        <li class="list-group-item"><strong>Email:</strong> support@ita.com</li>
+        <li class="list-group-item"><strong>Address:</strong> 123 Main Street, City Name, Country</li>
+    </ul>
+</div>
+{% endblock content %}
